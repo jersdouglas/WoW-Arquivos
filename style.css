@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #eee;
+    background: rgb(180,58,58);
+background: linear-gradient(36deg, rgba(180,58,58,1) 0%, rgba(51,50,50,1) 23%, rgba(47,148,253,1) 71%, rgba(189,190,51,1) 100%);
 }
 header{
     height: 150px;
