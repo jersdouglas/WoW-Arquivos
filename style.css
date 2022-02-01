@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +6,7 @@
 }
 body{
     background: rgb(180,58,58);
-background: linear-gradient(36deg, rgba(180,58,58,1) 0%, rgba(51,50,50,1) 23%, rgba(47,148,253,1) 71%, rgba(189,190,51,1) 100%);
+    background: linear-gradient(36deg, rgba(180,58,58,1) 0%, rgba(51,50,50,1) 23%, rgba(47,148,253,1) 71%, rgba(189,190,51,1) 100%);
 }
 header{
     height: 150px;
@@ -18,6 +19,10 @@ header h1{
     font-size: 3rem;
     font-weight: 9000;
     color: #000;
+}
+.titulo{
+    font-family: 'Architects Daughter', cursive;
+    color: rgba(0, 0, 0, 0.43);
 }
 .gallery-container{
     display: flex;
@@ -48,4 +53,15 @@ footer{
     align-items: center;
     color: #fff;
     font-style: italic;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.42);
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.418);
+    border-radius: 30px;
+    width: 10px;
 }
