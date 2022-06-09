@@ -1,6 +1,6 @@
 <body>
   <div align="center">
-    <a href="https://jersdouglas.github.io/WoW-Arquivos//"/>#WoW Prints!</a><br>
+    <a href="https://jersdouglas.github.io/WoW-Arquivos//"/>WoW Arquivos!</a><br>
   </div>
 
   <div align="center">
