@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 *{
+    --color: #00A97F;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    background: rgb(180,58,58);
-    background: linear-gradient(36deg, rgba(180,58,58,1) 0%, rgba(51,50,50,1) 23%, rgba(47,148,253,1) 71%, rgba(189,190,51,1) 100%);
+    background: #181818;
 }
 header{
     height: 150px;
@@ -22,7 +22,7 @@ header h1{
 }
 .titulo{
     font-family: 'Architects Daughter', cursive;
-    color: rgba(0, 0, 0, 0.43);
+    color: rgba(255, 255, 255, 0.43);
 }
 .gallery-container{
     display: flex;
@@ -44,7 +44,7 @@ header h1{
     object-fit: cover;
 }
 .gallery-items:hover{
-    transform: scale(1.2);
+    transform: scale(1.12);
 }
 footer{
     height: 100px;
@@ -59,9 +59,72 @@ footer{
 }
 ::-webkit-scrollbar-track{
     background: rgba(255, 255, 255, 0.42);
+    border-radius: 40px;
 }
 ::-webkit-scrollbar-thumb{
     background: rgba(0, 0, 0, 0.418);
-    border-radius: 30px;
+    border-radius: 40px;
     width: 10px;
 }
+
+/* Botao de Voltar pro Topo */
+.btn-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(rgba(255, 0, 0, 0), rgba(0, 128, 0, 0), rgba(0, 0, 255, 0));
+}
+.arrow-topo{
+	color: var(--color);
+}
+
+div a:hover, div a{
+	text-decoration: none;
+}
+
+.arrow-topo:hover{
+	color: rgb(255, 255, 255);
+	text-decoration-color: rgba(rgba(255, 0, 0, 0), rgba(0, 128, 0, 0), rgba(0, 0, 255, 0));
+}
+/* Button Navbar */
+nav{
+    text-align: center;
+}
+#prints-nav, #videos-nav, #addons-nav, #streams-nav {
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+   }
+   #prints-nav:hover, #videos-nav:hover, #addons-nav:hover, #streams-nav:hover{
+    background-color: var(--color);
+    color: #181818;
+   }
+   
+   /* icons no html de videos */
+   .icons{
+    text-align: center;
+   }
+   .img-icons{
+    border-radius: 50px;
+   }
+   .img-icons{
+    transition: transform 0.10s linear;
+   }
+   .img-icons:hover{
+    transform: scale(1.3);
+   }
