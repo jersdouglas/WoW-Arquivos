@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 *{
     --color: #00A97F;
-    --abc: #009900;
+    --video-streamers: #009900;
+    --imagens: rgb(12, 61, 42);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,7 +36,7 @@ header h1{
 .gallery-items{
     width: 340px;
     height: 300px;
-    border: 10px solid #fff;
+    border: 5px solid var(--imagens);
     box-shadow: 5px 5px 5px #0006;
     transition: transform 0.10s linear;
 }
@@ -111,8 +112,14 @@ nav{
     z-index: 1;
     text-decoration: none;
    }
-   #prints-nav:hover, #videos-nav:hover, #addons-nav:hover, #streams-nav:hover, #tbcc-nav:hover, #wotlk-nav:hover{
+   #prints-nav:hover, #videos-nav:hover, #addons-nav:hover, #streams-nav:hover, #tbcc-nav:hover, #wotlk-nav:hover {
     background-color: var(--color);
+    color: #181818;
+   }
+   #addons-opcoes{
+    text-align: center;
+   }
+   .retail-addons:hover {
     color: #181818;
    }
    
@@ -129,5 +136,5 @@ nav{
    }
    .img-icons:hover{
     transform: scale(1.3);
-    border: 3px solid var(--abc);
+    border: 3px solid var(--video-streamers);
    }
